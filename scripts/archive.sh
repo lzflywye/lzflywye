@@ -19,4 +19,4 @@ else
 fi
 
 echo "Compressing $TARGET to $TARGET.$EXT using $COMP_FLAG..."
-tar --format=pax $COMP_FLAG -cvf "$TARGET.$EXT" "$TARGET"
+tar --format=pax --numeric-owner $COMP_FLAG -cvf "$TARGET.$EXT" "$TARGET"
